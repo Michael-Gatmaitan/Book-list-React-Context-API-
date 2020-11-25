@@ -1,0 +1,110 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.app {
+  max-width: 4400px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.booklist-container {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  max-height: 100%;
+  position: relative;
+}
+.booklist-container nav {
+  width: 100%;
+  padding: 0 20px 12px 20px;
+  background-color: #161616;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+.booklist-container nav .toggle-theme {
+  width: 30px;
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 15px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.booklist-container nav .project-title {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.booklist-container nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.booklist-container nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px 8px;
+  border-radius: 4px;
+}
+.booklist-container .booklist {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 12px;
+  background-color: #252525;
+}
+.booklist-container .booklist .book {
+  width: 100%;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: grid;
+  grid-gap: 4px;
+  grid-auto-rows: auto;
+}
+.booklist-container .booklist .book .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.booklist-container .booklist .book .sub-text div {
+  padding: 6px;
+  background-color: rgba(218, 218, 218, 0.5);
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.booklist-container .booklist .book .buttons {
+  padding-top: 6px;
+}
+.booklist-container .booklist .book .buttons .delete {
+  padding: 8px 12px;
+  background-color: #e42b1e;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.booklist-container .user-inp {
+  background-color: #ff0000;
+}
